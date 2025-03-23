@@ -65,8 +65,9 @@ Frontend (7 tundi): Kasutasin oma kooli tööd näidisena. Esiteks Homepage koha
 
 ## Lisainfo
 mõtlesin et panen rakenduse verceli püsti, et siis lihtsam ligipääs aga jäin hätta backendi lisamisega sinna külge.
-oleks rohkem aega olnud oleks lisa ülesanded lahendanud nii:
-1. Erinevad istekohtade klassid (1. klass, äriklass, turistiklass). Selleks oleks teinud istekoha valimsel popup aknas jooned vahele, näiteks 1-5rida 1.klass, 6-8rida äriklass jne.
+Oleks rohkem aega olnud oleks lisa ülesanded lahendanud nii:
+1. Erinevad istekohtade klassid (1. klass, äriklass, turistiklass). Selleks oleks teinud istekoha valimsel popup aknas jooned vahele, näiteks 1-5rida 1.klass,
+ 6-8rida äriklass jne.
 2. Lennuandmete laadimine reaalse lennufirma API-st. Selle ülesande täitmiseks oleks saanud leida lennufirma API, mis pakub lennuandmete päringute tegemiseks teenuseid, näiteks Skyscanner API või Amadeus API.
 
 
