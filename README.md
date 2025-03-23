@@ -9,10 +9,10 @@ See projekt sisaldab kahte põhikomponenti: **Backend** (Spring Boot) ja **Front
 
 Enne alustamist veendu, et sul on järgmised tööriistad ja tarkvara paigaldatud:
 
-- [Node.js](https://nodejs.org/en/) (v.16 või uuem)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-- [Java](https://www.java.com/en/download/) (v.11 või uuem)
-- [Spring Boot](https://spring.io/projects/spring-boot) (või Intellij IDE, millel on vajalik konfiguratsioon)
+- [Node.js](https://nodejs.org/en/) 
+- [npm](https://www.npmjs.com/) 
+- [Java](https://www.java.com/en/download/)
+- [Spring Boot](https://spring.io/projects/spring-boot) 
 - [Maven](https://maven.apache.org/) (Java sõltuvuste haldamiseks)
 
 ## Kuidas projekti käivitada
@@ -21,7 +21,40 @@ Enne alustamist veendu, et sul on järgmised tööriistad ja tarkvara paigaldatu
 
 #### Samm 1: Kloneeri ja konfigureeri backend
 
-1. Kloneeri backend-i repostoorium oma masinasse:
+1. Kloneeri  repostoorium oma masinasse:
    ```bash
-   git clone <backend-repo-url>
-   cd <backend-repo-folder>
+   git clone https://github.com/Eerikpoopuu/Lennuplaneerija.git
+   ```
+2.**Intellijis** avada `LennujaamApplication.java` fail ja käivitada rakendus, klõpsates "Run" nuppu või käsurealt:
+
+   ```bash
+   ./mvnw spring-boot:run
+   ```
+ Kui kõik on õigesti konfigureeritud, peaks Spring Boot server käivituma aadressil `http://localhost:8080`
+ 
+3. Frontend (React)
+
+#### Samm 1: mine frontend-i repostoorium oma masinas:
+
+   ```bash
+   cd Lennuplaneerija/frontend/Lennuplaan
+
+   ```
+
+2. Paigalda vajalikud sõltuvused:
+
+   ```bash
+   npm install
+   ```
+
+#### Samm 2: Käivita frontend
+
+1. Käivita arendusserver:
+
+   ```bash
+   npm start
+   ```
+
+2. React rakendus peaks olema saadaval aadressil `http://localhost:3000`.
+
+   
