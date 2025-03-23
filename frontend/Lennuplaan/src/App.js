@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Box, TextField, Grid, Typography, Autocomplete, Button, Paper, Slider } from '@mui/material';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 import './App.css';
 
 function App() {

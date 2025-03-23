@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Box, TextField, Button, Typography, Dialog, DialogTitle, DialogContent, Grid, Snackbar, Alert } from '@mui/material';
 import './Booking.css';
@@ -15,7 +15,7 @@ function BookingPage() {
   const [passengerCount, setPassengerCount] = useState(1); 
 
   const seatRows = 15;
-  const seatColumns = ['A', 'B', 'C', 'D', 'E', 'F'];
+  const seatColumns = useMemo(() => ['A', 'B', 'C', 'D', 'E', 'F'], []);
 
   useEffect(() => {
     const generateOccupiedSeats = () => {
@@ -31,7 +31,7 @@ function BookingPage() {
       setOccupiedSeats(occupied);
     };
     generateOccupiedSeats();
-  }, []);
+  }, [seatColumns]);
 
   const handleAddPassenger = () => {
     setPassengerCount(prevCount => prevCount + 1); 
