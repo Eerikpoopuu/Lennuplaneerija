@@ -57,4 +57,17 @@ Enne alustamist veendu, et sul on järgmised tööriistad ja tarkvara paigaldatu
 
 2. React rakendus peaks olema saadaval aadressil `http://localhost:3000`.
 
+## Kuidas ja Kaua tegin?
+
+Backend : Kasutasin oma kooli tööd näidisena, muutes seda vastavalt projekti vajadustele. Töötlus kestis umbes 2 tundi, mille jooksul seadistasin Spring Boot'i rakenduse ja ühendasin vajalikud andmebaasi päringud.
+
+Frontend (7 tundi): Kasutasin oma kooli tööd näidisena. Esiteks Homepage kohandasin selle vastavalt oma projekti vajadustele. Booking lehe kohavalimis pop-up akna loomine oli mulle huvitav väljakutse, mille puhul kasutasin ChatGPT-d, et leida lahendus ja integreerida see õigesti Reacti rakendusesse.
+
+## Lisainfo
+mõtlesin et panen rakenduse verceli püsti, et siis lihtsam ligipääs aga jäin hätta backendi lisamisega sinna külge.
+oleks rohkem aega olnud oleks lisa ülesanded lahendanud nii:
+1. Erinevad istekohtade klassid (1. klass, äriklass, turistiklass). Selleks oleks teinud istekoha valimsel popup aknas jooned vahele, näiteks 1-5rida 1.klass, 6-8rida äriklass jne.
+2. Lennuandmete laadimine reaalse lennufirma API-st. Selle ülesande täitmiseks oleks saanud leida lennufirma API, mis pakub lennuandmete päringute tegemiseks teenuseid, näiteks Skyscanner API või Amadeus API.
+
+
    
