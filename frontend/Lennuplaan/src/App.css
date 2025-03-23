@@ -1,0 +1,59 @@
+/* Üldine stiil */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+  padding: 10px;
+  background-color: #003366;
+  color: white;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.header__text {
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.filters-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 20px;
+}
+
+.filter-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 450px;
+  margin-top: 200px;
+}
+
+.flights-container {
+  flex-grow: 1;
+  max-width: 900px;
+}
+
+.flight-box {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.search-button {
+  margin-top: 10px;
+}

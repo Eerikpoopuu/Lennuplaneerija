@@ -1,0 +1,28 @@
+.booking-container {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .booking-container .MuiTypography-h4 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .booking-container .MuiTypography-h6,
+  .booking-container .MuiTypography-body1 {
+    margin-bottom: 10px;
+  }
+  
+  .booking-container .MuiTextField-root {
+    margin-bottom: 20px;
+  }
+  
+  .booking-container button {
+    width: 40%;
+  }
+  
