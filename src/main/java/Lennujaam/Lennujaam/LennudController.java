@@ -22,6 +22,12 @@ public class LennudController {
         lennudRepository.save(lennud);
         return lennudRepository.findAll();
     }
+    @PutMapping("lennud/{id}")
+    public LennudEntity uuendaLend(@PathVariable Long id, @RequestBody LennudEntity lennud) {
+        lennud.setId(id);
+        return lennudRepository.save(lennud);
+    }
+
     @DeleteMapping("lennud/{id}")
     public List<LennudEntity> kustutaLend(@PathVariable Long id) {
         lennudRepository.deleteById(id);
