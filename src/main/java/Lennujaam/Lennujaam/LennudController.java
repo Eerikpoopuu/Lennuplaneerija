@@ -1,7 +1,9 @@
 package Lennujaam.Lennujaam;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -24,6 +26,9 @@ public class LennudController {
     }
     @PutMapping("lennud/{id}")
     public LennudEntity uuendaLend(@PathVariable Long id, @RequestBody LennudEntity lennud) {
+        if (!lennudRepository.existsById(id)) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+        }
         lennud.setId(id);
         return lennudRepository.save(lennud);
     }
